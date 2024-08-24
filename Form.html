@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bagpacker's - travel  to feel</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="form extre.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i></a>
+            <div class="header-content">
+            <h1 class="header-title">BAGPACKER's</h1>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Destination</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="Form.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+    <form  id="myForm" method="post">
+        <h2>Contact Us</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" class="form" name="name" placeholder="Your name" required>
+
+        <label for="phone">Phone no:</label>
+        <input type="tel" id="phone" name="phone" class="form" pattern="[0-9]{10}" maxlength="10" placeholder="Your Contact number" required>
+
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" class="form" placeholder="Your email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" class="form" placeholder="Your message" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</section>
+    <footer class="footer">
+        <p>&copy; 2024 Bagpacker's</p>
+    </footer>
+    <script>
+  const form = document.getElementById('myForm');
+        const formData = {};
+  
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          
+          const elements = form.elements;
+          for (let i = 0; i < elements.length; i++) {
+            const element = elements[i];
+            formData[element.name] = element.value;
+          }
+          console.log(formData);
+          form.reset();
+          // You can now store the formData object in local storage, send it to a server, or do whatever you want with it
+        });
+        const phoneInput = document.getElementById('phone');
+
+        phoneInput.addEventListener('submit', (e) => {
+          const phoneNumber = e.target.value;
+          const countryCode = '+91'; // Replace with your desired country code
+          const formattedPhoneNumber = `${countryCode} ${phoneNumber}`;
+          console.log(formattedPhoneNumber);
+        });
+    
+      </script>
+</body>
+</html>

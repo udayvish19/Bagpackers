@@ -1,0 +1,171 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;   
+}
+.header {
+    font-family:Montserrat;
+    font-variant: small-caps;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.header-title {  
+    text-shadow: 0 0 12px #948f8f;  
+    font-family:Montserrat;
+    font-variant: small-caps;
+    font-size: 21px;
+    font-weight: bold;
+    color: #333;
+}
+.header-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.header-nav li {
+    margin-left: 20px;
+}
+.header-nav a {
+    text-decoration: none;
+    color: #333;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+  /* Add a custom scrollbar to the form */
+form::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+form::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+form::-webkit-scrollbar-track {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+sub{
+    font-size:large;
+    font-variant: small-caps;
+}
+
+  h3{
+    font-family: Montserrat;
+    font-size: xx-large;    
+    font-variant: small-caps;
+  }
+  p {
+    font-family: "Roboto", sans-serif;
+  }
+.w3-row-padding {
+    margin: 0 -16px;
+}
+
+.w3-third {
+    width: calc(33.33% -16px);
+    margin: 16px;
+}
+
+.w3-card-4 {
+    box-shadow: 10px 10px 5px #000000ab;
+}
+/* Add some responsive design */
+@media only screen and (max-width: 600px) {
+    .w3-third {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* Add some styles for the lightbox modal */
+#w3-modal {
+    display: none;
+    position:sticky;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#w3-modal-content {
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    background-color: #f1f1f1;
+    border: 1px solid #888;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#w3-modal-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.read-more-content {
+    display: none;
+  }
+  
+  .read-more-btn {
+    background-color: transparent;
+    color: #000000;
+    padding: 0px 5px;
+    border: 2px;;
+    border-radius:10px;
+    cursor: pointer;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #3e8e41;
+  }
+/* Background image */
+    body{
+        background-image: url(https://cdn.pixabay.com/photo/2022/08/18/09/14/sea-7394353_640.jpg);
+        background-attachment: fixed;
+        background-size:cover ;
+        background-position: center;
+        height: 100vh;          
+        margin: 0;
+        
+        color: #000000;
+        filter: grayscale(0.1) contrast(1.1) brightness(); /* adjust the contrast and brightness */
+        
+    
+        }  
+        
+		/* Overlay container */
+		.overlay1 {
+            
+            font-variant: small-caps;
+            position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #000000;
+			font-size: 100px;
+			font-weight:bold ;
+			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+		}
+        .footer {            
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
