@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+form {
+    font-size: larger;
+    width: 400px;
+    margin:  400px;
+    margin-top: -6%;
+    margin-bottom:5%;
+    text-align: center;
+    background-color: transparent;
+    border-style: double;
+    padding: 15px;
+    border-radius: 10px;
+    text-shadow: 7px 0 15px #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    font-family:Montserrat;
+    font-variant: small-caps;
+    color: #000000;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+}
+label {
+    font-family:Montserrat;
+    font-variant: small-caps;
+    display:block;
+    margin-top: 30px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    text-shadow: 1px 0px 0.1px black;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea {
+    font-size: 16px;
+    font-family:Montserrat;
+    font-variant: small-caps;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: transparent;
+    border-radius: 5px;
+    text-shadow: 1px 0px 0.1px black;   
+}
+.form{
+    background-color: transparent; /* Make the background transparent */
+    border: none; /* Remove the border */
+    border-radius: 0; /* Remove the border radius */
+    box-shadow: none; /* Remove the box shadow */
+    padding: 10px; /* Add some padding */
+    color: #000000; /* White text color */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+textarea{
+    font-family:Montserrat;
+    font-variant: small-caps;
+    height: 50px;
+    text-shadow: 1px 0px 0.1px black;
+    
+}
+input[type="submit"] {
+    font-family:Montserrat;
+    font-variant: small-caps;
+    font-size: medium;
+    background-color: #000000;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border:rgb(0, 0, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+body {
+    font-family:Montserrat;
+    font-variant: small-caps;
+    margin: 0;
+}
+.header {
+    font-family:Montserrat;
+    font-variant: small-caps;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.header-title {     
+    text-shadow: 0 0 12px #948f8f;  
+    font-family:Montserrat;
+    font-variant: small-caps;
+    font-size: 21px;
+    font-weight: bold;
+    color: #333;
+}
+.header-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.header-nav li {
+    margin-left: 20px;
+}
+.header-nav a {
+    text-decoration: none;
+    color: #333;
+}
+/* Remove the scrollbar from the body */
+body::-webkit-scrollbar {
+    display: none;
+  }
+  /* Add a custom scrollbar to the form */
+form::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  form::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+  }
+  form::-webkit-scrollbar-track {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+.hero {
+    background-image: url(https://cdn.pixabay.com/photo/2022/08/18/09/14/sea-7394353_640.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #000000;
+    filter: grayscale(0.1) contrast(1.1) brightness(1); /* adjust the contrast and brightness */
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.5);
+}
+.hero-title {    
+    font-family:Montserrat;
+    font-variant: small-caps;
+    color: bisque;            
+    font-size: 72px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    
+}
+.footer {            
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}

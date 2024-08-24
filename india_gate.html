@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bagpacker's - travel to feel</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        /* Add some basic styling to make it look nice */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .image {
+            margin-top: 50px;
+            width: 30%;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .image:hover {
+            transform: scale(1.1);
+        }
+        .h2,.h3,.h4{
+            font-size: 48;
+        }
+        .info-container {
+            padding: 20px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .info {
+            
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        .location {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+        .history {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .one,
+        .two,
+        .three{
+            font-size: 36px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        /* Make it responsive */
+        @media only screen and (max-width: 600px) {
+            .image {
+                width: 45%;
+            }
+        }
+        @media only screen and (max-width: 400px) {
+            .image {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i></a>
+            <div class="header-content">
+            <h1 class="header-title">BAGPACKER's</h1>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Destination</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="Form.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+
+    <!-- Image container -->
+    <div class="image-container">
+        <img src="https://imgs.search.brave.com/q3VH85UAdgq6qsAz4t5qnpy_wKcIml1G6l1OvMfLLPM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTEw/Nzk1OTEyL3Bob3Rv/L2luZGlhLWdhdGUu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PWtaa2RyRURYRXRv/TEs2UWg4WFB5d2M5/VllWOTVtSlhYY1dM/QnhIZnROX1U9" alt="India Gate" class="image">
+        <img src="https://imgs.search.brave.com/ZH0_IWCUTrASt6NXu3M0hSI3BYWA8mEi0NWdzCDRUnk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTA2/ODEyNjQxL3Bob3Rv/L2luZGlhLWdhdGUu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PTNaeEpnUUFjRTZV/V3E2emY5T05kZnBE/cHdDeU45aUo1dkRM/RVFOYVZGUm89" alt="India Gate" class="image">
+        <img src="https://imgs.search.brave.com/FVpp9q4I2Nqlki7zIgz8jMAJv8ggP77x8fnDadkbaAk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTEy/NzE4MTc0L3Bob3Rv/L2luZGlhLWdhdGUt/bmV3LWRlbGhpLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1N/V0phWWtjd2didUhB/SmFhVzVibzI0X1hP/cS1qaTFiRVBZUkxo/ODFXTHRJPQ" alt="India Gate" class="image">
+        <!-- Add more images here -->
+    </div>
+
+    <!-- Info container -->
+    <div class="info-container">
+        <h3 class="location">India Gate</h3>
+        <p class="info">India Gate is a war memorial located in New Delhi, India. It was designed by Sir Edwin Lutyens and built in 1921.</p>
+        <h3 class="history"><b>History</b></h3>
+        <p class="info">India Gate,is a significant historical monument with a rich background that reflects India's colonial past and its journey to independence.
+            Here’s an overview of its history:<br>
+
+            <h1 class="one"><b>Colonial Era and Construction</b><br><br></h1>
+            
+            <h3 class="three"><b>Design and Planning:</b></h3>
+            <p class="info"><br><b>-Architect:</b> India Gate was designed by Sir Edwin Lutyens, a prominent British architect known for his work on the planning of New Delhi.<br> The design of the gate was inspired by the Arc de Triomphe in Paris but adapted to Indian architectural styles and materials.
+            <br><b>-Purpose:</b> The monument was commissioned to honor the soldiers of the Indian Army who died in World War I. It was conceived as a tribute to their sacrifice and bravery.
+            </p>
+            <h2 class="two"><br><b>Construction:</b></h2>
+            <p class="info"> <b>- Foundation Stone:</b> The foundation stone was laid by the then British Viceroy of India, Lord Reading, on February 10, 1921.
+            <br><b>- Completion:</b> Construction of India Gate was completed in 1931. The monument was built using red sandstone and granite,which were chosen for their durability and aesthetic appeal.<br>
+            </p>
+            <h2 class="two"><b>Design Features</b><br></h2>
+            
+            <p class="info"><b>-Architecture:</b> India Gate stands at 42 meters (138 feet) tall with a 9.1-meter (30 feet) wide archway.<br> It is adorned with inscriptions and intricate bas-reliefs that include the names of more than 13,000 soldiers who perished in World War I.
+            <br><b>-Inscriptions:</b> The names of the soldiers are inscribed on the gate, which includes those who lost their lives in various theaters of war, including Mesopotamia and the North-West Frontier.
+            </p>
+            <h2 class="two"><br> <b>Post-Independence Era:</b><br></h2>
+            <p class="info">
+            <br><b>Amar Jawan Jyoti:</b>
+            <br><b>- Addition:</b> In 1971, during the Indo-Pakistani War of 1971, an additional feature, the Amar Jawan Jyoti (Eternal Flame), was installed at the base of the gate.<br> This flame serves as a tribute to the soldiers who died in subsequent conflicts, particularly the 1971 war.
+            <br><b>- Significance:</b> The Amar Jawan Jyoti has become a symbol of national reverence for the armed forces and is a focal point for ceremonial events.
+            </p>
+            <br><br><b>Cultural and Historical Impact:</b><br>
+            <p class="info">
+            <br>-<b>Ceremonial Role:</b> India Gate has become a central location for national events and ceremonies, including Republic Day and Independence Day celebrations.
+            <br> <b>-Symbolism:</b> While originally a colonial-era monument, India Gate has been embraced as a symbol of national pride and unity in independent India. <br>It represents the collective memory and respect for those who sacrificed their lives for the country.
+            </p><br>
+            <h3 class="three"><br><b>Modern Era</b><br></h3>
+            <p class="info">
+            <br><b>Public Space:</b><br>
+            <br><b> - Popular Spot:</b> Today, India Gate is not only a war memorial but also a popular recreational area. The surrounding lawns and gardens are frequently visited by locals and tourists alike for leisure and relaxation.
+            <br><b>- Civic Importance:</b> The area around India Gate has been a site for various public gatherings and political protests, reflecting its role as a space for democratic expression.
+            </p>
+            <br>
+            <br><b>Maintenance and Preservation:</b><br>
+            <p class="info"><br><b>- Restoration Efforts:</b> Over the years, there have been various efforts to maintain and restore the monument to preserve its historical and architectural integrity.
+            </p>
+            <p class="info"> <br><b>In summary</b>, India Gate is more than just a war memorial; it is a landmark that embodies the historical evolution of India from a colonial past to an independent nation.
+            <br> Its design, construction, and subsequent additions reflect both the history of the Indian Army's
+             sacrifices and the ongoing respect and reverence held for these contributions.</p>
+    </div>
+
+    <!-- JavaScript code to make it interactive -->
+    <script>
+        const images = document.querySelectorAll('.image');
+        const infoContainer = document.querySelector('.info-container');
+
+        images.forEach((image) => {
+            image.addEventListener('click', () => {
+                infoContainer.style.display = 'block';
+            });
+        });
+
+        infoContainer.addEventListener('click', () => {
+            infoContainer.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
