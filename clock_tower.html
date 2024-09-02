@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bagpacker's - travel to feel</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        /* Add some basic styling to make it look nice */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .image {
+            margin-top: 50px;
+            width: 30%;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .image:hover {
+            transform: scale(1.1);
+        }
+        .h3{
+            font-size: 36;
+        }
+        .mod{
+            font-weight: lighter;
+            font-size: 40;
+        
+        }
+        .sum{
+            font-size: 20px;
+            font-weight: 300;
+        }
+        .info-container {
+            padding: 20px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .info {
+            font-family: Montserrat;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        .location {
+            font-family: Montserrat;
+            font-size: 48px;
+            margin-bottom: 10pxpx;
+        }
+        .history {
+            font-family: Montserrat;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        /* Make it responsive */
+        @media only screen and (max-width: 600px) {
+            .image {
+                width: 45%;
+            }
+        }
+        @media only screen and (max-width: 400px) {
+            .image {
+                width: 90%;
+            }
+        }
+                    /* Style the dropdown menus */
+    .w3-dropdown-hover:hover .w3-dropdown-content {
+        display:block ;
+         }
+    .w3-dropdown-content {
+      display: none;
+      position: absolute;
+      background-color:rgba(244, 155, 77, 0.696);
+      min-width: 160px;
+      z-index: 1;
+    }
+    .w3-dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .w3-dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    
+      
+    
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i></a>
+            <div class="header-content">
+            <h1 class="header-title">BAGPACKER's</h1>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about us.html">About</a></li>
+                    
+    
+                 <li>   <div class="w3-dropdown-hover">
+      <a href="#" class="w3-navbar-item  w3-padding-16">
+        Destination
+        <i class="fa fa-caret-down"></i>
+      </a>
+      <div class="w3-dropdown-content">
+        <a href="red_fort.html">Red Fort</a>
+        <a href="kashi.html">Kashiviswanath Temple</a>
+        <a href="Qutub_minar.html">Qutub Minar</a>
+        <a href="Dal_lake.html">Dal Lake</a>
+        <a href="taj_mahal.html">Taj Mahal</a>
+        <a href="ladakh.html">Ladakh</a>
+        <a href="clock_tower.html">Clock Tower</a>
+        <a href="Balsamand.html">Balsamand Lake</a>
+        <a href="india_gate.html">India Gate</a>
+        <a href="jhod_fort.html">Mehrangarh Fort</a>
+      </div>
+    </div></li>
+                    
+                    
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="Form.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Image container -->
+    <div class="image-container">
+        <img src="https://imgs.search.brave.com/_JiTW_I9vQAyBStg3e-P-tCRt1uDmWRasZQVwDeukiY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/YXRsYXNvYnNjdXJh/LmNvbS9SZkdLcUVv/ZkFrdlVLNHZHVXZa/SjRPTlNEeWZjTXk0/X2tkcEZKbnpPTDJF/L3JzOmZpbGw6NjAw/OjQwMDoxL2c6Y2Uv/YzoyNjUxOjE3Njc6/bm93ZToyOjIwNi9x/OjgxL3NtOjEvc2Nw/OjEvYXI6MS9hSFIw/Y0hNNkx5OWhkR3ho/L2N5MWtaWFl1Y3pN/dVlXMWgvZW05dVlY/ZHpMbU52YlM5MS9j/R3h2WVdSekwzQnNZ/V05sL1gybHRZV2Rs/Y3k5a01XTmsvWVRV/M05DMDNOV0V6TFRS/bC9aRE10T0dJNU15/MDRZV0poL09ETXla/akExTURobVl6Vmgv/WTJRMVlXUmhZV1kx/WVRVMy9ZVEpmU1Ux/SFh6SXdNakV4L01E/STBYekE0TVRFeE5T/NXEvY0djLmpwZw" alt="tower" class="image">
+        <img src="https://imgs.search.brave.com/zWg7Pn3way-MF8D0I_GKJpZKPnNwIhO1o6JIQynrWeg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQ3/MzczMzgxOC9waG90/by9mYW1vdXMtZ2hh/bnRhLWdoYXItY2xv/Y2stdG93ZXItaW4t/am9kaHB1ci1yYWph/c3RoYW4taW5kaWEu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PTBfS05MQWFlcGlF/VmRXS1ZMRDl2WmFl/bE0yRWFVb3VMeTdw/Q1lDZVpKRlk9" alt="tower" class="image">
+        <img src="https://imgs.search.brave.com/MA0EIG4DQcLU4DgbU4yWWkdOHEmkYtTiLhlQZr6dzlc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dHJhd2VsbC5pbi9h/ZG1pbi9pbWFnZXMv/dXBsb2FkLzAzNDIy/OTg0OEpvZGhwdXJf/Q2xvY2tfVG93ZXJf/TWFpbi5qcGc" alt="tower" class="image">
+        <!-- Add more images here -->
+    </div>
+
+    <!-- Info container -->
+    <div class="info-container">
+        <h1 class="location">Clock Tower</h1>
+        <p class="info">The clock tower stands tall, surrounded by the lively Sardar Market, which bustles with colorful stalls showcasing handicrafts,
+             textiles, and spices. The area is a sensory experience, immersing visitors in Jodhpur’s vibrant heritage.
+             The clock itself was sourced from London and is believed to be from the same company that built the famous clock tower in London.</p>
+        <p class="info">Located in the heart of Jodhpur, Ghanta Ghar, also known as the Clock Tower, is a historic landmark and a prominent feature 
+            of the city’s skyline.Built during the reign of Maharaja Sardar Singh (late 19th century to early 20th century), the tower was initially
+             a major landmark near the Mehrangarh Fort.</p>
+
+            <h3 class="mod"> Address  </h3>
+            <p class="info"> Nai Sarak, Ghantaghar Market, 342001, Jodhpur<br>
+
+                Coordinates<br>
+                
+                26.2929° N, 73.02452° E</p>
+            
+            <h3 class="mod">History </h3>
+            <p class="info"> The tower was built by Maharaja Sardar Singh, from whom the adjacent Sardar Market takes its name. 
+                An ancient clock tower stands tall, preserved in the middle of the city, believed to be the sole source for tracking time for locals in earlier times. 
+                The top of this tower gives an amazing panorama of the city.</p>
+            <h3 class="mod">Additional Information</h3>
+            <p class="info">
+               - Visitors can climb the tower for a panoramic view of the city.
+               <br>- The area is popular for shopping and dining, with a range of local cuisine options available.
+               <br>- The clock tower is a popular spot for photography, especially during sunset and nighttime when it is illuminated.</p>
+         
+            <p class="sum"> In summary, The Clock Tower in Jodhpur, also known as the Ghanta Ghar,
+                 is a vibrant and historic landmark situated in the heart of the city’s bustling Sardar Market.
+                  Constructed in 1911 by Maharaja Sardar Singh, this iconic structure is renowned for its impressive 
+                  clock and ornate design that blends Rajput and Victorian architectural styles.
+                   Surrounded by lively markets filled with colorful textiles, spices, and local crafts,
+                    the Clock Tower offers visitors a unique blend of cultural vibrancy and historical significance. 
+                Its central location makes it a perfect starting point for exploring Jodhpur’s rich heritage and vibrant street life.</p>
+    </div>
+
+    <!-- JavaScript code to make it interactive -->
+    <script>
+        const images = document.querySelectorAll('.image');
+        const infoContainer = document.querySelector('.info-container');
+
+        images.forEach((image) => {
+            image.addEventListener('click', () => {
+                infoContainer.style.display = 'block';
+            });
+        });
+
+        infoContainer.addEventListener('click', () => {
+            infoContainer.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

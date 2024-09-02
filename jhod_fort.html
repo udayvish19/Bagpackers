@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bagpacker's - travel to feel</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        /* Add some basic styling to make it look nice */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .image {
+            margin-top: 50px;
+            width: 30%;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .image:hover {
+            transform: scale(1.1);
+        }
+        .h3{
+            font-size: 36;
+        }
+        .mod{
+            font-weight: lighter;
+            font-size: 40;
+        
+        }
+        .sum{
+            font-size: 20px;
+            font-weight: 300;
+        }
+        .info-container {
+            padding: 20px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .info {
+            font-family: Montserrat;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        .location {
+            font-family: Montserrat;
+            font-size: 48px;
+            margin-bottom: 10pxpx;
+        }
+        .history {
+            font-family: Montserrat;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        /* Make it responsive */
+        @media only screen and (max-width: 600px) {
+            .image {
+                width: 45%;
+            }
+        }
+        @media only screen and (max-width: 400px) {
+            .image {
+                width: 90%;
+            }
+        }
+                    /* Style the dropdown menus */
+    .w3-dropdown-hover:hover .w3-dropdown-content {
+        display:block ;
+         }
+    .w3-dropdown-content {
+      display: none;
+      position: absolute;
+      background-color:rgba(244, 155, 77, 0.696);
+      min-width: 160px;
+      z-index: 1;
+    }
+    .w3-dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .w3-dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    
+      
+    
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i></a>
+            <div class="header-content">
+            <h1 class="header-title">BAGPACKER's</h1>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about us.html">About</a></li>
+                    
+    
+                 <li>   <div class="w3-dropdown-hover">
+      <a href="#" class="w3-navbar-item  w3-padding-16">
+        Destination
+        <i class="fa fa-caret-down"></i>
+      </a>
+      <div class="w3-dropdown-content">
+        <a href="red_fort.html">Red Fort</a>
+        <a href="kashi.html">Kashiviswanath Temple</a>
+        <a href="Qutub_minar.html">Qutub Minar</a>
+        <a href="Dal_lake.html">Dal Lake</a>
+        <a href="taj_mahal.html">Taj Mahal</a>
+        <a href="ladakh.html">Ladakh</a>
+        <a href="clock_tower.html">Clock Tower</a>
+        <a href="Balsamand.html">Balsamand Lake</a>
+        <a href="india_gate.html">India Gate</a>
+        <a href="jhod_fort.html">Mehrangarh Fort</a>
+      </div>
+    </div></li>
+                    
+                    
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="Form.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Image container -->
+    <div class="image-container">
+        <img src="https://imgs.search.brave.com/MZyp5ZzI2lBNXLbQRBQvWSRWsxNqlnlTBEiHVFPyTCk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/dmVlbmF3b3JsZC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjEvMTAvTWVocmFu/Z2FyaC5qcGc" alt="fort" class="image">
+        <img src="https://imgs.search.brave.com/QItF3-OvRafoTKSOayWY6nFl-4Sx8h8nf6b4KI_w-UY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90cmF2/ZWxvZ3lpbmRpYS5i/LWNkbi5uZXQvYmxv/Zy93cC1jb250ZW50/L3VwbG9hZHMvMjAx/OC8wOS9JbnNpZGUt/dmlldy1vZi1NZWhy/YW5nYXJoLUZvcnQu/anBn" alt="fort" class="image">
+        <img src="https://imgs.search.brave.com/uryoKOZ9NTNe-aUmcrSKTqJRFupFErZt_a4mYw92Zx8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/d29tZW5zd2ViLmlu/L3dwLWNvbnRlbnQv/dm9sdW1lX2JscjFf/MDEvdXBsb2Fkcy8y/MDE3LzA1L01laHJh/bmdhcmhfRm9ydF9K/b2RocHVyLmpwZw" alt="fort" class="image">
+        <!-- Add more images here -->
+    </div>
+
+    <!-- Info container -->
+    <div class="info-container">
+        <h1 class="location">Mehrangarh Fort</h1>
+        <p class="info">Mehrangarh is a historic fort located in Jodhpur, Rajasthan, India. 
+            It stands on a hilltop, rising about 122 m (400 ft) above the surrounding plains,and the complex spans 1,200 acres (486 hectares).
+             It was initially built around 1459 by the Rajput ruler of Rathore clan Rao Jodha,
+              though most of the existing structure is from the 17th century built by his successors.
+              The fort has seven gates, which includes main entrance Jai Pol (meaning 'victory gate'),
+               built by Maharaja Man Singh to commemorate his victories over the Jaipur and Bikaner armies in 1806. 
+            The Fattehpol, commemorates victory of Maharaja Ajit Singh over the Mughals.</p>
+        <p class="info">Within its boundaries, you'll find several palaces known for their intricate carvings and expansive courtyards, a Chamunda Mataji Temple, 
+            as well as a museum that houses various relics. A winding road leads to and from the city below. The imprints of the impact of cannonballs 
+            fired by attacking armies of Jaipur can still be seen on the second gate.
+             At the north-east of the fort is the chhatri of Kirat Singh Sodha, a soldier who fell on the spot defending Mehrangarh.</p>
+        <p class="info">Some of the notable festivals taking place here include the World Sacred Spirit Festival and Rajasthan International Folk Festival.</p>
+
+        <h3 class="mod"> Etymology  </h3>
+        <p class="info"> Mehrangarh's etymology is rooted in the Sanskrit words 'Mihir' (meaning sun) and 'garh' (meaning fort). 
+                Phonetically evolving from 'Mihirgarh' to 'Mehrangarh' in Rajasthani language. 
+                The fort was named Mihirgarh, meaning ‘fort of the sun’ – a reference to the ruling clan Rathore's mythical descent from the sun god Surya</p>   
+           
+        <h3 class="mod"> History</h3>
+            <p class="info"> Mehrangarh Fort, situated in Jodhpur, Rajasthan, India, has a rich and storied past spanning over five centuries. Here is a concise overview:<br><br>
+
+                -1459: The foundation of the fort was laid by Rao Jodha, the 15th ruler of the Rathore dynasty, amidst a dramatic backdrop of a curse from a disturbed hermit, Cheeriya Nathji, and four human sacrifices.
+                <br>-1531-1562: Maldeo, a subsequent ruler, built some structures within the fort.
+                <br>-1707-1724: Maharaja Ajit Singh constructed additional buildings.
+                <br>-1843-1872: Maharaja Takhat Singh further expanded the fort.
+                <br>-1947-1952: Maharaja Hanwant Singh, the last ruler of Jodhpur, oversaw the fort’s maintenance.</p>
+           
+           <h3 class="mod">Galleries at the Mehrangarh Museum</h3>
+           <h3 class="history">Elephant's howdahs</h3>
+            
+            <p class="info"> Howdahs were a kind of two-compartment wooden seat (mostly covered with gold and silver embossed sheets),
+                 which were fastened onto the elephant's back. The front compartment, with more leg space and a raised protective metal sheet, 
+                was meant for kings or royalty, and the rear smaller one for a reliable bodyguard disguised as a fly-whisk attendant.</p>
+            
+            <h3 class="history"> Palanquins  </h3>
+            <p class="info">
+                Palanquins were a popular means of travel and circumambulation for the ladies of the nobility up to the second quarter of the 20th century.
+                  They were also used by male nobility and royals on special occasions</p>
+            <h3 class="history">Daulat Khana – Treasures of Mehrangarh Museum</h3>
+            <p class="info"> This gallery displays one of the most important and best-preserved collections of fine and applied arts of the Mughal period of Indian history,
+                during which the Rathore rulers of Jodhpur maintained close links with the Mughal emperors. It also has the remains of Emperor Akbar.</p>
+            <h3 class="history">Armoury </h3>
+            <p class="info">
+                This gallery displays a rare collection of armour from every period in Jodhpur. On display are sword hilts in jade, silver, 
+                rhino horn, ivory, shields studded with rubies, emeralds and pearls and guns with gold and silver work on the barrels. 
+                The gallery also has on display the personal swords of many emperors,
+                 among them outstanding historical piece like the Khaanda of Rao Jodha, weighing over 3 kg, the sword of Akbar and the sword of Timur.</p>
+            <h3 class="history"> Paintings  </h3>
+            <p class="info">
+                This gallery displays colours of Marwar-Jodhpur, the finest example of Marwar paintings.</p>
+             <h3 class="history">The Turban Gallery</h3>
+ <p class="info">
+    The Turban Gallery in the Mehrangarh Museum seeks to preserve,
+     document and display the many different types of turbans once prevalent in Rajasthan;
+      every community, region, and festival having had its own headgear.  </p>
+
+<h3 class="mod">Culture</h3>
+
+
+                <p class="info"> The fort has musicians performing folk music at the entrance and houses museum, restaurants, exhibitions, and craft bazaars.
+                     The fort was one of the filming locations for Disney's 1994 live-action film The Jungle Book, as well as the 2012 film The Dark Knight Rises.
+                      Principal photography for the latter commenced on 6 May 2011.[17][18] The Emraan Hashmi starrer Awarapan was also shot here.
+                       In 2015, the fort was used to record a collaborative album by musicians including Israeli composer Shye Ben Tzur, English composer 
+                       and Radiohead guitarist Jonny Greenwood, and Radiohead producer Nigel Godrich. The recording was the subject of a documentary, 
+                       Junun, by the American director Paul Thomas Anderson.[20][21] In March 2018, the film crew for the Bollywood film Thugs of Hindostan
+                        used the fort as one of its shooting locations;
+                     actor Amitabh Bachchan left a reflective post about his experience there on his official blog. </p>
+
+            <p class="sum"> In summary, Mehrangarh Fort, perched majestically atop a rocky hill in Jodhpur, India, is a stunning example of Rajput 
+                architecture and a testament to the grandeur of Rajasthan's royal heritage. Built in 1460 by Rao Jodha, the fort boasts imposing walls, 
+                intricate carvings, and panoramic views of the blue city below. Its expansive courtyards, opulent palaces, and richly decorated museums 
+                offer visitors a glimpse into the rich history and culture of the Marwar region. With its impressive collection of artifacts,
+                 royal armory, and beautiful gardens, Mehrangarh Fort is a captivating destination for history buffs and architecture enthusiasts alike.</p>
+    </div>
+
+    <!-- JavaScript code to make it interactive -->
+    <script>
+        const images = document.querySelectorAll('.image');
+        const infoContainer = document.querySelector('.info-container');
+
+        images.forEach((image) => {
+            image.addEventListener('click', () => {
+                infoContainer.style.display = 'block';
+            });
+        });
+
+        infoContainer.addEventListener('click', () => {
+            infoContainer.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

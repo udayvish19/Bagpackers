@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bagpacker's - travel to feel</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        /* Add some basic styling to make it look nice */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .image {
+            margin-top: 50px;
+            width: 30%;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .image:hover {
+            transform: scale(1.1);
+        }
+        .h3{
+            font-size: 36;
+        }
+        .mod{
+            font-weight: lighter;
+            font-size: 40;
+        
+        }
+        .sum{
+            font-size: 20px;
+            font-weight: 300;
+        }
+        .info-container {
+            padding: 20px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .info {
+            font-family: Montserrat;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        .location {
+            font-family: Montserrat;
+            font-size: 48px;
+            margin-bottom: 10pxpx;
+        }
+        .history {
+            font-family: Montserrat;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        /* Make it responsive */
+        @media only screen and (max-width: 600px) {
+            .image {
+                width: 45%;
+            }
+        }
+        @media only screen and (max-width: 400px) {
+            .image {
+                width: 90%;
+            }
+        }
+                    /* Style the dropdown menus */
+    .w3-dropdown-hover:hover .w3-dropdown-content {
+        display:block ;
+         }
+    .w3-dropdown-content {
+      display: none;
+      position: absolute;
+      background-color:rgba(244, 155, 77, 0.696);
+      min-width: 160px;
+      z-index: 1;
+    }
+    .w3-dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .w3-dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    
+      
+    
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i></a>
+            <div class="header-content">
+            <h1 class="header-title">BAGPACKER's</h1>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about us.html">About</a></li>
+                    
+    
+                 <li>   <div class="w3-dropdown-hover">
+      <a href="#" class="w3-navbar-item  w3-padding-16">
+        Destination
+        <i class="fa fa-caret-down"></i>
+      </a>
+      <div class="w3-dropdown-content">
+        <a href="red_fort.html">Red Fort</a>
+        <a href="kashi.html">Kashiviswanath Temple</a>
+        <a href="Qutub_minar.html">Qutub Minar</a>
+        <a href="Dal_lake.html">Dal Lake</a>
+        <a href="taj_mahal.html">Taj Mahal</a>
+        <a href="ladakh.html">Ladakh</a>
+        <a href="clock_tower.html">Clock Tower</a>
+        <a href="Balsamand.html">Balsamand Lake</a>
+        <a href="india_gate.html">India Gate</a>
+        <a href="jhod_fort.html">Mehrangarh Fort</a>
+      </div>
+    </div></li>
+                    
+                    
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="Form.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Image container -->
+    <div class="image-container">
+        <img src="https://imgs.search.brave.com/TKgvBv1NUsZKprPQWmCKbYHFSlZ65ObiNhaiiDLJr4o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dG91cm15aW5kaWEu/Y29tL2ltYWdlcy9i/YWxzYW1hbmQtbGFr/ZTEuanBn" alt="lake" class="image">
+        <img src="https://imgs.search.brave.com/6Pb8um52nYKgYYGUYCona5_VFksPD-CLgacBCdJGEsg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dG91cm15aW5kaWEu/Y29tL2ltYWdlcy9i/YWxzYW1hbmQtbGFr/ZTIuanBn" alt="" class="image">
+        <img src="https://gos3.ibcdn.com/1d2c6eb0602e11e4b07736cfdd80c293.jfif" alt="lakee" class="image">
+        <!-- Add more images here -->
+    </div>
+
+    <!-- Info container -->
+    <div class="info-container">
+        <h1 class="location">Balsamand Lake</h1>
+        <p class="info">Balsamand Lake is a lake situated 5 kilometres (3.1 mi) from Jodhpur on Jodhpur-Mandore Road. This lake is a popular picnic spot,
+             by Balak Rao Pratihar in 1159 AD who belongs to the kshatriya community. It was designed as a water reservoir to provide water to Mandore.
+             The lake has a length of one kilometre (0.62 mi), breadth of 50 metres (160 ft) and a depth of 15 metres (49 ft).</p>
+
+
+        <h3 class="history">Balsamand Lake Palace</h3>
+        <p class="info">The Balsamand Lake Palace was built later as a summer palace on its shore.
+             The lake is surrounded by lush green gardens that house groves of trees like mango, papaya, pomegranate, guava and plum.
+             Animals and birds like the jackal and peacock also call this place home<br></p>
+
+            <p class="sum"> In summary, Balsamand Lake, nestled in the scenic foothills of the Aravalli range,
+                 offers a serene escape with its tranquil waters and lush surroundings. Ideal for nature lovers and peace seekers, the lake features picturesque views, boating opportunities, and bird-watching spots.
+                 Its peaceful ambiance and the nearby historic Balsamand Palace make it a charming destination for relaxation and exploration.</p>
+    </div>
+
+    <!-- JavaScript code to make it interactive -->
+    <script>
+        const images = document.querySelectorAll('.image');
+        const infoContainer = document.querySelector('.info-container');
+
+        images.forEach((image) => {
+            image.addEventListener('click', () => {
+                infoContainer.style.display = 'block';
+            });
+        });
+
+        infoContainer.addEventListener('click', () => {
+            infoContainer.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

@@ -25,8 +25,17 @@
         .image:hover {
             transform: scale(1.1);
         }
-        .h2,.h3,.h4{
-            font-size: 48;
+        .h3{
+            font-size: 36;
+        }
+        .mod{
+            font-weight: lighter;
+            font-size: 40;
+        
+        }
+        .sum{
+            font-size: 20px;
+            font-weight: 300;
         }
         .info-container {
             padding: 20px;
@@ -36,24 +45,19 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .info {
-            
+            font-family: Montserrat;
             font-size: 22px;
             margin-bottom: 15px;
         }
         .location {
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 25px;
+            font-family: Montserrat;
+            font-size: 48px;
+            margin-bottom: 10pxpx;
         }
         .history {
+            font-family: Montserrat;
             font-size: 24px;
             margin-bottom: 20px;
-        }
-        .one,
-        .two,
-        .three{
-            font-size: 36px;
-            font-family: 'Courier New', Courier, monospace;
         }
         /* Make it responsive */
         @media only screen and (max-width: 600px) {
@@ -66,6 +70,30 @@
                 width: 90%;
             }
         }
+                    /* Style the dropdown menus */
+    .w3-dropdown-hover:hover .w3-dropdown-content {
+        display:block ;
+         }
+    .w3-dropdown-content {
+      display: none;
+      position: absolute;
+      background-color:rgba(244, 155, 77, 0.696);
+      min-width: 160px;
+      z-index: 1;
+    }
+    .w3-dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .w3-dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    
+      
+    
     </style>
 </head>
 <body>
@@ -77,15 +105,35 @@
             <nav class="header-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Destination</a></li>
+                    <li><a href="about us.html">About</a></li>
+                    
+    
+                 <li>   <div class="w3-dropdown-hover">
+      <a href="#" class="w3-navbar-item  w3-padding-16">
+        Destination
+        <i class="fa fa-caret-down"></i>
+      </a>
+      <div class="w3-dropdown-content">
+        <a href="red_fort.html">Red Fort</a>
+        <a href="kashi.html">Kashiviswanath Temple</a>
+        <a href="Qutub_minar.html">Qutub Minar</a>
+        <a href="Dal_lake.html">Dal Lake</a>
+        <a href="taj_mahal.html">Taj Mahal</a>
+        <a href="ladakh.html">Ladakh</a>
+        <a href="clock_tower.html">Clock Tower</a>
+        <a href="Balsamand.html">Balsamand Lake</a>
+        <a href="india_gate.html">India Gate</a>
+        <a href="jhod_fort.html">Mehrangarh Fort</a>
+      </div>
+    </div></li>
+                    
+                    
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="Form.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
-    </header> 
+    </header>
 
     <!-- Image container -->
     <div class="image-container">
@@ -97,50 +145,53 @@
 
     <!-- Info container -->
     <div class="info-container">
-        <h3 class="location">India Gate</h3>
-        <p class="info">India Gate is a war memorial located in New Delhi, India. It was designed by Sir Edwin Lutyens and built in 1921.</p>
-        <h3 class="history"><b>History</b></h3>
+        <h1 class="location">India Gate</h1>
+        <p class="info">India Gate is a prominent war memorial located in New Delhi, India. Built in 1931, it was designed by Sir Edwin Lutyens to honor the 82,000 Indian soldiers who lost their lives fighting for the British Indian Army during World War I and the Third Anglo-Afghan War
+            . It was designed by Sir Edwin Lutyens and built in 1921.</p>
+        <h3 class="history"> History  </h3>
         <p class="info">India Gate,is a significant historical monument with a rich background that reflects India's colonial past and its journey to independence.
-            Here’s an overview of its history:<br>
+            Here’s an overview of its history:<br></p>
 
-            <h1 class="one"><b>Colonial Era and Construction</b><br><br></h1>
+            <h3 class="mod"> Colonial Era and Construction  </h3>
             
-            <h3 class="three"><b>Design and Planning:</b></h3>
-            <p class="info"><br><b>-Architect:</b> India Gate was designed by Sir Edwin Lutyens, a prominent British architect known for his work on the planning of New Delhi.<br> The design of the gate was inspired by the Arc de Triomphe in Paris but adapted to Indian architectural styles and materials.
-            <br><b>-Purpose:</b> The monument was commissioned to honor the soldiers of the Indian Army who died in World War I. It was conceived as a tribute to their sacrifice and bravery.
-            </p>
-            <h2 class="two"><br><b>Construction:</b></h2>
-            <p class="info"> <b>- Foundation Stone:</b> The foundation stone was laid by the then British Viceroy of India, Lord Reading, on February 10, 1921.
-            <br><b>- Completion:</b> Construction of India Gate was completed in 1931. The monument was built using red sandstone and granite,which were chosen for their durability and aesthetic appeal.<br>
-            </p>
-            <h2 class="two"><b>Design Features</b><br></h2>
-            
-            <p class="info"><b>-Architecture:</b> India Gate stands at 42 meters (138 feet) tall with a 9.1-meter (30 feet) wide archway.<br> It is adorned with inscriptions and intricate bas-reliefs that include the names of more than 13,000 soldiers who perished in World War I.
-            <br><b>-Inscriptions:</b> The names of the soldiers are inscribed on the gate, which includes those who lost their lives in various theaters of war, including Mesopotamia and the North-West Frontier.
-            </p>
-            <h2 class="two"><br> <b>Post-Independence Era:</b><br></h2>
-            <p class="info">
-            <br><b>Amar Jawan Jyoti:</b>
-            <br><b>- Addition:</b> In 1971, during the Indo-Pakistani War of 1971, an additional feature, the Amar Jawan Jyoti (Eternal Flame), was installed at the base of the gate.<br> This flame serves as a tribute to the soldiers who died in subsequent conflicts, particularly the 1971 war.
-            <br><b>- Significance:</b> The Amar Jawan Jyoti has become a symbol of national reverence for the armed forces and is a focal point for ceremonial events.
-            </p>
-            <br><br><b>Cultural and Historical Impact:</b><br>
-            <p class="info">
-            <br>-<b>Ceremonial Role:</b> India Gate has become a central location for national events and ceremonies, including Republic Day and Independence Day celebrations.
-            <br> <b>-Symbolism:</b> While originally a colonial-era monument, India Gate has been embraced as a symbol of national pride and unity in independent India. <br>It represents the collective memory and respect for those who sacrificed their lives for the country.
+            <h3 class="history"> Design and Planning:  </h3>
+            <p class="info"> -Architect:   India Gate was designed by Sir Edwin Lutyens, a prominent British architect known for his work on the planning of New Delhi.
+                 The design of the gate was inspired by the Arc de Triomphe in Paris but adapted to Indian architectural styles and materials.</p>
+            <p class="info"> -Purpose:   The monument was commissioned to honor the soldiers of the Indian Army who died in World War I. It was conceived as a tribute to their sacrifice and bravery.
             </p><br>
-            <h3 class="three"><br><b>Modern Era</b><br></h3>
+            <h3 class="mod"> Construction:  </h3>
+            <p class="info">  - Foundation Stone:   The foundation stone was laid by the then British Viceroy of India, Lord Reading, on February 10, 1921.</p>
+            <p class="info"> - Completion:   Construction of India Gate was completed in 1931. The monument was built using red sandstone and granite,which were chosen for their durability and aesthetic appeal.
+            </p><br>
+            <h3 class="history"> Design Features  </h3>
+            
+            <p class="info"> -Architecture:   India Gate stands at 42 meters (138 feet) tall with a 9.1-meter (30 feet) wide archway. It is adorned with inscriptions and intricate bas-reliefs that include the names of more than 13,000 soldiers who perished in World War I.</p>
+            <p class="info"> -Inscriptions:   The names of the soldiers are inscribed on the gate, which includes those who lost their lives in various theaters of war, including Mesopotamia and the North-West Frontier.
+            </p>
+            <h3 class="mod"><br>  Post-Independence Era:  </h3>
+            
+            <h3 class="history"> Amar Jawan Jyoti:  </h3>
             <p class="info">
-            <br><b>Public Space:</b><br>
-            <br><b> - Popular Spot:</b> Today, India Gate is not only a war memorial but also a popular recreational area. The surrounding lawns and gardens are frequently visited by locals and tourists alike for leisure and relaxation.
-            <br><b>- Civic Importance:</b> The area around India Gate has been a site for various public gatherings and political protests, reflecting its role as a space for democratic expression.
+             - Addition:   In 1971, during the Indo-Pakistani War of 1971, an additional feature, the Amar Jawan Jyoti (Eternal Flame), was installed at the base of the gate. This flame serves as a tribute to the soldiers who died in subsequent conflicts, particularly the 1971 war.</p>
+            <p class="info"> - Significance:   The Amar Jawan Jyoti has become a symbol of national reverence for the armed forces and is a focal point for ceremonial events.
+            </p><br>
+            <h3 class="mod"> Cultural and Historical Impact:  </h3>
+            <p class="info">
+             -Ceremonial Role:   India Gate has become a central location for national events and ceremonies, including Republic Day and Independence Day celebrations.</p>
+            <p class="info">  -Symbolism:   While originally a colonial-era monument, India Gate has been embraced as a symbol of national pride and unity in independent India. It represents the collective memory and respect for those who sacrificed their lives for the country.
+            </p><br>
+            <h3 class="mod"> Modern Era  </h3>
+            <h3 class="history"> Public Space:  </h3>
+            <p class="info">
+              - Popular Spot:   Today, India Gate is not only a war memorial but also a popular recreational area. The surrounding lawns and gardens are frequently visited by locals and tourists alike for leisure and relaxation.</p>
+                <p class="info">
+                 - Civic Importance:   The area around India Gate has been a site for various public gatherings and political protests, reflecting its role as a space for democratic expression.
+                </p>
+                <p class="info"> Maintenance and Preservation:  </p>
+            <p class="info"> - Restoration Efforts:   Over the years, there have been various efforts to maintain and restore the monument to preserve its historical and architectural integrity.
             </p>
-            <br>
-            <br><b>Maintenance and Preservation:</b><br>
-            <p class="info"><br><b>- Restoration Efforts:</b> Over the years, there have been various efforts to maintain and restore the monument to preserve its historical and architectural integrity.
-            </p>
-            <p class="info"> <br><b>In summary</b>, India Gate is more than just a war memorial; it is a landmark that embodies the historical evolution of India from a colonial past to an independent nation.
-            <br> Its design, construction, and subsequent additions reflect both the history of the Indian Army's
+            <p class="sum"> In summary, India Gate is more than just a war memorial; it is a landmark that embodies the historical evolution of India from a colonial past to an independent nation.
+             Its design, construction, and subsequent additions reflect both the history of the Indian Army's
              sacrifices and the ongoing respect and reverence held for these contributions.</p>
     </div>
 

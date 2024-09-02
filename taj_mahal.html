@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bagpacker's - travel to feel</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        /* Add some basic styling to make it look nice */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .image {
+            margin-top: 50px;
+            width: 30%;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .image:hover {
+            transform: scale(1.1);
+        }
+        .h3{
+            font-size: 36;
+        }
+        .mod{
+            font-weight: lighter;
+            font-size: 40;
+        
+        }
+        .sum{
+            font-size: 20px;
+            font-weight: 300;
+        }
+        .info-container {
+            padding: 20px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .info {
+            font-family: Montserrat;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        .location {
+            font-family: Montserrat;
+            font-size: 48px;
+            margin-bottom: 10pxpx;
+        }
+        .history {
+            font-family: Montserrat;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        /* Make it responsive */
+        @media only screen and (max-width: 600px) {
+            .image {
+                width: 45%;
+            }
+        }
+        @media only screen and (max-width: 400px) {
+            .image {
+                width: 90%;
+            }
+        }
+                    /* Style the dropdown menus */
+    .w3-dropdown-hover:hover .w3-dropdown-content {
+        display:block ;
+         }
+    .w3-dropdown-content {
+      display: none;
+      position: absolute;
+      background-color:rgba(244, 155, 77, 0.696);
+      min-width: 160px;
+      z-index: 1;
+    }
+    .w3-dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .w3-dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    
+      
+    
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i></a>
+            <div class="header-content">
+            <h1 class="header-title">BAGPACKER's</h1>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about us.html">About</a></li>
+                    
+    
+                 <li>   <div class="w3-dropdown-hover">
+      <a href="#" class="w3-navbar-item  w3-padding-16">
+        Destination
+        <i class="fa fa-caret-down"></i>
+      </a>
+      <div class="w3-dropdown-content">
+        <a href="red_fort.html">Red Fort</a>
+        <a href="kashi.html">Kashiviswanath Temple</a>
+        <a href="Qutub_minar.html">Qutub Minar</a>
+        <a href="Dal_lake.html">Dal Lake</a>
+        <a href="taj_mahal.html">Taj Mahal</a>
+        <a href="ladakh.html">Ladakh</a>
+        <a href="clock_tower.html">Clock Tower</a>
+        <a href="Balsamand.html">Balsamand Lake</a>
+        <a href="india_gate.html">India Gate</a>
+        <a href="jhod_fort.html">Mehrangarh Fort</a>
+      </div>
+    </div></li>
+                    
+                    
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="Form.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Image container -->
+    <div class="image-container">
+        <img src="https://imgs.search.brave.com/Dc5ZHxcKwEyLNhxJW_FX893dO9jOrM5Np0beMSETNKI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTU5/MzcxNzkxL3Bob3Rv/L3Rhai1tYWhhbC1p/bmRpYS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9TTVqNVdP/Ti1zYjVJYmVGeEU4/d0kzQ1JoRjFsWU8y/UWVGd0diSU1ZZzZm/Yz0" alt="taj" class="image">
+        <img src="https://imgs.search.brave.com/8v-S-vX65iGQVk8cVywVoiXk5pr0zdRDhmRt_CiEerI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTg2/NDQ4MDcyL3Bob3Rv/L3RoZS1pbnRlcmlv/cnMtb2YtdGFqLW1h/aGFsLWluZGlhLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1O/U21kdGFid08xenJp/UnJMRk8xSE01NDdr/R21adGJJUGdoRjc4/MDZvS1EwPQ" alt="taj" class="image">
+        <img src="https://imgs.search.brave.com/Blo7aDpKOp47UkqEjJEc7zHWiuVLz_UZxyPweJc3OWU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTc3/MzcyNjY5L3Bob3Rv/L3Rhai1tYWhhbC5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/UmVlRXBBOTBYME9y/MGc2YS1idTB1UFlm/NVRvNktvRTM4dy1G/d0k0c0szRT0" alt="taj" class="image">
+        <!-- Add more images here -->
+    </div>
+
+    <!-- Info container -->
+    <div class="info-container">
+        <h1 class="location">Taj Mahal</h1>
+        <p class="info">The Taj Mahal, is an ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, Uttar Pradesh, India.
+             It was commissioned in 1631 by the fifth Mughal emperor, Shah Jahan to house the tomb of his beloved wife, Mumtaz Mahal;
+              it also houses the tomb of Shah Jahan himself. The tomb is the centrepiece of a 17-hectare (42-acre) complex,
+             which includes a mosque and a guest house, and is set in formal gardens bounded on three sides by a crenellated wall.</p>
+        <p class="info">Construction of the mausoleum was completed in 1648, but work continued on other phases of the project for another five years.
+             The first ceremony held at the mausoleum was an observance by Shah Jahan, on 6 February 1643, of the 12th anniversary of the death of Mumtaz Mahal.
+             The Taj Mahal complex is believed to have been completed in its entirety in 1653 at a cost estimated at the time to be around ₹5 million,
+              which in 2023 would be approximately ₹35 billion (US$77.8 million)</p>
+        <p class="info">The building complex incorporates the design traditions of Indo-Islamic and Mughal architecture. 
+                It employs symmetrical constructions with the usage of various shapes and symbols. While the mausoleum is constructed of white marble inlaid with semi-precious stones,
+                 red sandstone was used for other buildings in the complex similar to the Mughal era buildings of the time.
+                 The construction project employed more than 20,000 workers and artisans under the guidance of a board of architects led by Ustad Ahmad Lahori, the emperor's court architect.</p>
+        <p class="info">The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being "the jewel of Islamic art in India and one of the universally admired masterpieces of the world's heritage".
+                     It is regarded as one of the best examples of Mughal architecture and a symbol of Indian history. 
+                     The Taj Mahal is a major tourist attraction and attracts more than five million visitors a year.
+                     In 2007, it was declared a winner of the New 7 Wonders of the World initiative.</p>
+        <h3 class="mod"> Etymology </h3>
+        <p class="info">  The name "Taj Mahal" is of Urdu origin, and believed to be derived from Arabic and Persian, 
+                with the words tāj mahall meaning "crown" (tāj) "palace" (mahall). Abdul Hamid Lahori, in his book from 1636 Padshahnama,
+                 refers to the Taj Mahal as rauza-i munawwara (Perso-Arabic: روضه منواره, rawdah-i munawwarah), meaning the illumined or illustrious tomb.
+                  The name "Taj" might have been derived from the corruption of the second syllable of "Mumtaz".</p>
+        <h3 class="mod">Inspiration</h3>  
+        <p class="info"> The Taj Mahal was commissioned by Shah Jahan in 1631, to be built in the memory of his wife Mumtaz Mahal,
+                 who died on 17 June that year while giving birth to their 14th child, Gauhara Begum.
+                 Construction started in 1632, and the mausoleum was completed in 1648, while the surrounding buildings and garden were finished five years later</p>
+        <p class="info"> The imperial court documenting Shah Jahan's grief after the death of Mumtaz Mahal illustrates the love story held as the inspiration for the Taj Mahal.
+                 According to contemporary historians Muhammad Amin Qazvini, Abdul Hamid Lahori and Muhammad Saleh Kamboh, Shah Jahan did not show the same level of affection for others as he had shown Mumtaz while she was alive.
+                  After her death, he avoided royal affairs for a week due to his grief and gave up listening to music and lavish dressing for two years. Shah Jahan was enamored by the beauty of the land at the south side of Agra on which a mansion belonging to Raja Jai Singh I stood.
+                 He chose the place for the construction of Mumtaz's tomb after which Jai Singh agreed to donate it to the emperor.</p>
+            <h3 class="mod"><br> Architecture and design</h3>
+        
+            <p class="info">
+                The Taj Mahal incorporates and expands on design traditions of Indo-Islamic and Mughal architecture.
+                Inspirations for the building came from Timurid and Mughal buildings including the Gur-e Amir in Samarkand 
+                (the tomb of Timur, progenitor of the Mughal dynasty) and Humayun's Tomb in Delhi which inspired the Charbagh
+                 gardens and hasht-behesht plan of the site. The building complex employs symmetrical constructions 
+                 with the usage of various shapes and symbols.[16] While the mausoleum is constructed of white marble inlaid with
+                  semi-precious stones, red sandstone was used for other buildings in the complex similar to the Mughal era buildings of the time.
+                  The entire complex sits on platform measuring 300 metres (980 ft) in length and 8.7 metres (28.5 ft) in height on the banks of Yamuna river.
+                 The platform is built with varying patterns of dark and light colored sandstone.</p>
+            
+            <h3 class="mod"> Tourism </h3>
+            <p class="info">
+                The Taj Mahal is a major tourist attraction and attracts a large number of domestic and foreign visitors.
+                 About five million visitors visited Taj Mahal in the financial year 2022–23.
+                  A three-tier pricing system is in place, with a significantly lower entrance fee for Indian citizens and more expensive ones for foreigners. 
+                  As of 2024, the fee for Indian citizens was ₹50, for citizens of SAARC and BIMSTEC countries, it was ₹540 and for other foreign tourists,
+                   it was ₹1,100. Visitors are allowed through three gates and as polluting vehicles are not allowed near the complex,
+                    tourists must either walk or take electric buses from the designated parking areas. 
+                    The complex is open on all days except on Friday from one hour before sunrise to 45 minutes before sunset.
+                     The complex is open for limited night viewing on the day of the full moon, excluding the month of Ramadan.
+                 In 2019, to address overtourism, the site instituted fines for visitors who stayed longer than three hours.</p>
+             <p class="info">The small town to the south of the Taj, known as Taj Ganji or Mumtazabad, was initially constructed with caravanserais,
+                 bazaars and markets to serve the needs of visitors and workers.
+                  Lists of recommended travel destinations often feature the Taj Mahal, which also appears in several listings of seven wonders of the modern world,
+                   including the New Seven Wonders of the World, a poll conducted in 2007.
+                 Foreign dignitaries often visit the Taj Mahal on trips to India.</p>
+            <p class="sum"> In summary,The Taj Mahal, an exquisite 17th-century mausoleum located in Agra, 
+                India, is renowned for its breathtaking beauty and architectural brilliance.
+                 Constructed by Mughal Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal,
+                  it is a UNESCO World Heritage site and one of the Seven Wonders of the World. Its stunning white marble dome, 
+                  intricate carvings, and lush surrounding gardens make it a symbol of eternal love and a must-see for travelers.
+                   The Taj Mahal’s iconic architecture, 
+                detailed inlay work, and the serene reflecting pool create a mesmerizing experience, drawing millions of tourists from around the globe each year.</p>
+    </div>
+
+    <!-- JavaScript code to make it interactive -->
+    <script>
+        const images = document.querySelectorAll('.image');
+        const infoContainer = document.querySelector('.info-container');
+
+        images.forEach((image) => {
+            image.addEventListener('click', () => {
+                infoContainer.style.display = 'block';
+            });
+        });
+
+        infoContainer.addEventListener('click', () => {
+            infoContainer.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

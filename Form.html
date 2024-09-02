@@ -7,44 +7,65 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="form extre.css">
     <link rel="stylesheet" href="index.css">
-    <script src="script.js"></script>
 </head>
 <body>
-    <header class="header">
-        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
-            <i class="fa fa-bars"></i></a>
-            <div class="header-content">
-            <h1 class="header-title">BAGPACKER's</h1>
-            <nav class="header-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Destination</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="Form.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header class="header">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i></a>
+          <div class="header-content">
+          <h1 class="header-title">BAGPACKER's</h1>
+          <nav class="header-nav">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about us.html">About</a></li>
+                  
+  
+               <li>   <div class="w3-dropdown-hover">
+    <a href="#" class="w3-navbar-item  w3-padding-16">
+      Destination
+      <i class="fa fa-caret-down"></i>
+    </a>
+    <div class="w3-dropdown-content">
+      <a href="red_fort.html">Red Fort</a>
+      <a href="kashi.html">Kashiviswanath Temple</a>
+      <a href="Qutub_minar.html">Qutub Minar</a>
+      <a href="Dal_lake.html">Dal Lake</a>
+      <a href="taj_mahal.html">Taj Mahal</a>
+      <a href="ladakh.html">Ladakh</a>
+      <a href="clock_tower.html">Clock Tower</a>
+      <a href="Balsamand.html">Balsamand Lake</a>
+      <a href="india_gate.html">India Gate</a>
+      <a href="jhod_fort.html">Mehrangarh Fort</a>
+    </div>
+  </div></li>
+                  
+                  
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="Form.html">Contact</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
     <section class="hero">
+        <div class="card">
     <form  id="myForm" method="post">
         <h2>Contact Us</h2>
         <label for="name">Name:</label>
-        <input type="text" id="name" class="form" name="name" placeholder="Your name" required>
+        <input type="text" id="name"  class="form" name="name" placeholder="Your name" text-color="white"required>
 
         <label for="phone">Phone no:</label>
-        <input type="tel" id="phone" name="phone" class="form" pattern="[0-9]{10}" maxlength="10" placeholder="Your Contact number" required>
+        <input type="tel" id="phone" name="phone"  class="form" pattern="[0-9]{10}" maxlength="10" placeholder="Your Contact number" required>
 
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" class="form" placeholder="Your email" required>
 
         <label for="message">Message:</label>
-        <textarea id="message" name="message" class="form" placeholder="Your message" required></textarea>
+        <textarea id="message" name="message" class="form"  placeholder="Your message" required></textarea>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" color="white">
     </form>
+    </div>
 </section>
     <footer class="footer">
         <p>&copy; 2024 Bagpacker's</p>

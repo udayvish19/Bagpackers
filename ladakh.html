@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bagpacker's - travel to feel</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        /* Add some basic styling to make it look nice */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .image {
+            margin-top: 50px;
+            width: 30%;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .image:hover {
+            transform: scale(1.1);
+        }
+        .h3{
+            font-size: 36;
+        }
+        .mod{
+            font-weight: lighter;
+            font-size: 40;
+        
+        }
+        .sum{
+            font-size: 20px;
+            font-weight: 300;
+        }
+        .info-container {
+            padding: 20px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .info {
+            font-family: Montserrat;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        .location {
+            font-family: Montserrat;
+            font-size: 48px;
+            margin-bottom: 10pxpx;
+        }
+        .history {
+            font-family: Montserrat;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        /* Make it responsive */
+        @media only screen and (max-width: 600px) {
+            .image {
+                width: 45%;
+            }
+        }
+        @media only screen and (max-width: 400px) {
+            .image {
+                width: 90%;
+            }
+        }
+                    /* Style the dropdown menus */
+    .w3-dropdown-hover:hover .w3-dropdown-content {
+        display:block ;
+         }
+    .w3-dropdown-content {
+      display: none;
+      position: absolute;
+      background-color:rgba(244, 155, 77, 0.696);
+      min-width: 160px;
+      z-index: 1;
+    }
+    .w3-dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .w3-dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    
+      
+    
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i></a>
+            <div class="header-content">
+            <h1 class="header-title">BAGPACKER's</h1>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about us.html">About</a></li>
+                    
+    
+                 <li>   <div class="w3-dropdown-hover">
+      <a href="#" class="w3-navbar-item  w3-padding-16">
+        Destination
+        <i class="fa fa-caret-down"></i>
+      </a>
+      <div class="w3-dropdown-content">
+        <a href="red_fort.html">Red Fort</a>
+        <a href="kashi.html">Kashiviswanath Temple</a>
+        <a href="Qutub_minar.html">Qutub Minar</a>
+        <a href="Dal_lake.html">Dal Lake</a>
+        <a href="taj_mahal.html">Taj Mahal</a>
+        <a href="ladakh.html">Ladakh</a>
+        <a href="clock_tower.html">Clock Tower</a>
+        <a href="Balsamand.html">Balsamand Lake</a>
+        <a href="india_gate.html">India Gate</a>
+        <a href="jhod_fort.html">Mehrangarh Fort</a>
+      </div>
+    </div></li>
+                    
+                    
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="Form.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Image container -->
+    <div class="image-container">
+        <img src="https://imgs.search.brave.com/JZYQbJMiCxVxKWcH1UHo39yuaQFWYPXLANRbFoWLPjA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zMy5p/bmRpYS5jb20vdHJh/dmVsL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE2LzA2L0xhZGFr/aC0zLXNodXR0ZXJz/dG9ja18yOTE5NzM3/ODEuanBn" alt="ladakh" class="image">
+        <img src="https://imgs.search.brave.com/9kO2f-kb69UnQOgFg6Y1pEpmNWMBM8fawe4yf4-P53Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAxLzc4LzY5LzMw/LzM2MF9GXzE3ODY5/MzA4NF9vcHFaZ2VI/anRxMnMzOTR1MElV/enlISjZxaXdSbXpj/US5qcGc" alt="ladakh" class="image">
+        <img src="https://imgs.search.brave.com/XG3Da7euZ-F4nOagFAzIeb4M-xKVrM5HCCtLrXAWmz4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA0LzQwLzQ2Lzgy/LzM2MF9GXzQ0MDQ2/ODI0M19HRURndDNz/UmExdWxEU3R5WFg1/WmJ0Vmd2SlNCY0ln/aS5qcGc" alt="ladakh" class="image">
+        <!-- Add more images here -->
+    </div>
+
+    <!-- Info container -->
+    <div class="info-container">
+        <h1 class="location">Ladakh</h1>
+        <p class="info">Ladakh is a region administered by India as a union territory and constitutes an eastern portion of the larger Kashmir region
+             that has been the subject of a dispute between India and Pakistan since 1947 and India and China since 1959.
+              Ladakh is bordered by the Tibet Autonomous Region to the east, the Indian state of Himachal Pradesh to the south,
+               both the Indian-administered union territory of Jammu and Kashmir and the Pakistan-administered Gilgit-Baltistan to the west,
+                and the southwest corner of Xinjiang across the Karakoram Pass in the far north.
+                 It extends from the Siachen Glacier in the Karakoram range to the north to the main Great Himalayas to the south. The eastern end,
+             consisting of the uninhabited Aksai Chin plains, is claimed by the Indian Government as part of Ladakh, but has been under Chinese control.</p>
+        <p class="info">In the past, Ladakh gained importance from its strategic location at the crossroads of important trade routes,
+             but as Chinese authorities closed the borders between Tibet Autonomous Region and Ladakh in the 1960s, international trade dwindled.
+              Since 1974, the Government of India has successfully encouraged tourism in Ladakh.
+             As Ladakh is strategically important, the Indian military maintains a strong presence in the region.</p>
+        <p class="info">The largest town in Ladakh is Leh, followed by Kargil, each of which headquarters a district.
+             The Leh district contains the Indus, Shyok and Nubra river valleys. The Kargil district contains the Suru, Dras and Zanskar river valleys.
+              The main populated regions are the river valleys, but the mountain slopes also support pastoral Changpa nomads. The main religious groups
+               in the region are Muslims (mainly Shia) (46%), Buddhists (mainly Tibetan Buddhists) (40%), and Hindus (12%) with the remaining 2% made of other religions.
+             Ladakh is one of the most sparsely populated regions in India. Its culture and history are closely related to those of Tibet.</p>
+        <p class="info">Ladakh was established as a union territory of India on 31 October 2019, following the passage of the Jammu and Kashmir Reorganisation Act.
+             Prior to that, it was part of the Jammu and Kashmir state.
+             Ladakh is both the largest and the second least populous union territory of India.</p>  
+          
+             <h3 class="mod"> Names and their etymology </h3>
+
+            <p class="info">The classical name in Tibetan: ལ་དྭགས, Wylie: La dwags, THL: la dak means the "land of high passes". 
+                Ladak is its pronunciation in several Tibetan dialects. The English spelling Ladakh is derived from Persian: ladāx.<br><br>
+                The region was previously known as Maryul (see page for etymology).</p>
+            <p class="info"> Medieval Islamic scholars called Ladakh the "Great Tibet" (derived from Turko-Arabic Ti-bat, meaning "highland");
+                 Baltistan and other trans-Himalayan states in Kashmir's vicinity were referred to as "Little Tibets".</p>
+            <p class="info">It has also been called Ma-Lo-Pho (by Hiuen Tsang) or Lal Bhumi.
+                 Names in the local language include Kanchapa (Land of snow) and Ripul (Country of mountains).</p>
+
+            <h3 class="history">Ladakh Division </h3>
+            
+            <p class="info"> On 8 February 2019, Ladakh became a separate Revenue and Administrative Division within Jammu and Kashmir, 
+                having previously been part of the Kashmir Division. 
+                As a division, Ladakh was granted its own Divisional Commissioner and Inspector General of Police.</p>
+            <p class="info"> Leh was initially chosen to be the headquarters of the new division however, following protests,
+                 it was announced that Leh and Kargil will jointly serve as the divisional headquarters, 
+                 each hosting an Additional Divisional Commissioner to assist the Divisional Commissioner and Inspector General of Police who will spend half their time in each town.</p>
+            
+            
+            <h3 class="mod"><br> Administration </h3>
+            <p class="info">
+                Under the terms of the Jammu and Kashmir Reorganisation Act, Ladakh is administered as a union territory without a legislative assembly or elected government. 
+                The head of government is a Lieutenant Governor appointed by the President of India who is assisted by civil servants of the Indian Administrative Service</p>
+            
+            <p class="sum"> In summary, Ladakh, often called "The Land of High Passes," is a mesmerizing region in northern India known for its rugged terrain,
+                 stunning landscapes, and unique culture. Nestled in the Indian Himalayas, it offers breathtaking views of snow-capped mountains, crystal-clear lakes,
+                  and ancient monasteries. Adventure enthusiasts flock to Ladakh for its high-altitude trekking, thrilling motorcycle journeys,
+                   and serene experiences at places like Pangong Lake and Nubra Valley. With its blend of Tibetan Buddhism, colorful festivals,
+                 and warm hospitality, Ladakh provides an unforgettable journey into one of the world's most remote and enchanting destinations.</p>
+    </div>
+
+    <!-- JavaScript code to make it interactive -->
+    <script>
+        const images = document.querySelectorAll('.image');
+        const infoContainer = document.querySelector('.info-container');
+
+        images.forEach((image) => {
+            image.addEventListener('click', () => {
+                infoContainer.style.display = 'block';
+            });
+        });
+
+        infoContainer.addEventListener('click', () => {
+            infoContainer.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

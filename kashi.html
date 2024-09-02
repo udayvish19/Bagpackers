@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bagpacker's - travel to feel</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        /* Add some basic styling to make it look nice */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .image {
+            margin-top: 50px;
+            width: 30%;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .image:hover {
+            transform: scale(1.1);
+        }
+        .h3{
+            font-size: 36;
+        }
+        .mod{
+            font-weight: lighter;
+            font-size: 40;
+        
+        }
+        .sum{
+            font-size: 20px;
+            font-weight: 300;
+        }
+        .info-container {
+            padding: 20px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .info {
+            font-family: Montserrat;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        .location {
+            font-family: Montserrat;
+            font-size: 48px;
+            margin-bottom: 10pxpx;
+        }
+        .history {
+            font-family: Montserrat;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        /* Make it responsive */
+        @media only screen and (max-width: 600px) {
+            .image {
+                width: 45%;
+            }
+        }
+        @media only screen and (max-width: 400px) {
+            .image {
+                width: 90%;
+            }
+        }
+                    /* Style the dropdown menus */
+    .w3-dropdown-hover:hover .w3-dropdown-content {
+        display:block ;
+         }
+    .w3-dropdown-content {
+      display: none;
+      position: absolute;
+      background-color:rgba(244, 155, 77, 0.696);
+      min-width: 160px;
+      z-index: 1;
+    }
+    .w3-dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .w3-dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    
+      
+    
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i></a>
+            <div class="header-content">
+            <h1 class="header-title">BAGPACKER's</h1>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about us.html">About</a></li>
+                    
+    
+                 <li>   <div class="w3-dropdown-hover">
+      <a href="#" class="w3-navbar-item  w3-padding-16">
+        Destination
+        <i class="fa fa-caret-down"></i>
+      </a>
+      <div class="w3-dropdown-content">
+        <a href="red_fort.html">Red Fort</a>
+        <a href="kashi.html">Kashiviswanath Temple</a>
+        <a href="Qutub_minar.html">Qutub Minar</a>
+        <a href="Dal_lake.html">Dal Lake</a>
+        <a href="taj_mahal.html">Taj Mahal</a>
+        <a href="ladakh.html">Ladakh</a>
+        <a href="clock_tower.html">Clock Tower</a>
+        <a href="Balsamand.html">Balsamand Lake</a>
+        <a href="india_gate.html">India Gate</a>
+        <a href="jhod_fort.html">Mehrangarh Fort</a>
+      </div>
+    </div></li>
+                    
+                    
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="Form.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Image container -->
+    <div class="image-container">
+        <img src="https://media.istockphoto.com/id/904231206/photo/ganges-river-ghat-varanasi-india.jpg?b=1&s=612x612&w=0&k=20&c=YRWJyVCbCloTj0Lb_kaTIlLSGe-JlP_flxshLBr4x1g=" alt="kashi" class="image">
+        <img src="https://images.pexels.com/photos/27670662/pexels-photo-27670662/free-photo-of-worship-worth-attention.jpeg?auto=compress&cs=tinysrgb&w=400" alt="kashi" class="image">
+        <img src="https://img.freepik.com/premium-photo/bustling-riverside-scene-varanasi-india-with-temples-boats_1213951-11137.jpg?size=626&ext=jpg&ga=GA1.1.1139860336.1724585262&semt=ais_hybrid" alt="kashi" class="image">
+        <!-- Add more images here -->
+    </div>
+
+    <!-- Info container -->
+    <div class="info-container">
+        <h1 class="location">Kashi vishwanath temple</h1>
+        <p class="info">Kashi Vishwanath Temple is a Hindu temple dedicated to Shiva. It is located in Vishwanath Gali, in Varanasi, Uttar Pradesh, India.
+             The temple is a Hindu pilgrimage site and is one of the twelve Jyotirlinga shrines.
+             The presiding deity is known by the names Vishwanath and Vishweshwara (IAST: Viśvanātha and Viśveśvara), 
+             literally meaning Lord of the Universe.<br><br>According to several historical accounts, the Mughal Emperor Aurangzeb ordered the demolition of the Hindu temple in 1669. 
+             Subsequently, in 1678, the Gyanvapi Mosque was built on its site, but Hindu pilgrims continued to visit the remnants of the temple. The current structure was constructed on an adjacent site by the Maratha ruler Ahilyabai Holkar of Indore in 1780.<br><br>
+             In 2021, a major redevelopment of the temple complex was completed, and the Kashi Vishwanath Dham Corridor connecting the Ganga river with the temple was inaugurated by Prime Minister Modi, leading to a many-fold increase in visitors.
+             It has become one of the most visited Hindu temples in India, with an average 45,000 pilgrims per day in 2023. The total assets of the temple, were estimated to be more than ₹6 crores in 2024.</p>
+        
+    
+
+            <h3 class="mod"> Legend  </h3>
+            
+            <p class="info">It is believed that Varanasi is the first Jyotirlinga to manifest itself.
+             According to the legend, it was at this place that Shiva (the Hindu god of destruction) manifested as an infinite column of light (Jyotirlinga) 
+             in front of Brahma (the Hindu god of creation) and Vishnu (the Hindu god of preservation) when they had an argument about their supremacy. </p>
+             <p class="info">In order to discover the origin of the luminous column, Vishnu took the form of a boar (Varaha) and tracked the column beneath the ground, while Brahma, who assumed the shape of a swan, scoured the heavens in an attempt to locate the apex of the column.
+            However, both of them were unsuccessful in identifying the source of the luminous column. Yet, Brahma deceitfully asserted that he had discovered the summit of the column, while Vishnu humbly admitted his inability to find the starting point of the radiant column.
+             Due to Brahma's deceit over the discovery of the origin of the luminous column, Shiva penalised him by cutting his fifth head and placing a curse upon him.
+            This curse entailed that Brahma would no longer receive reverence, whereas Vishnu, being truthful, would be equally venerated alongside Shiva and have dedicated temples for eternity. </p>
+            <p class="info">Hindu scriptures describe Vishweshwara as the sacred deity of Varanasi, holding the position of king over all the other deities as well as over all the inhabitants of the city and the extended circuit of the Panchkoshi, 
+            an area (the sacred boundary of Varanasi) spreading over 50 miles.</p>
+
+
+
+            <h3 class="mod"> Jyotirlinga </h3>
+
+            <p class="info"> The jyotirlinga is an ancient axis mundi symbol representing the supremely formless (nirguna) reality at the core of creation, out of which the form (saguna) of Shiva appears.
+                 The jyothirlinga shrines are thus places where Shiva appeared as a fiery column of light.</p>
+
+
+            <p class="info">There are twelve 'self manifested' jyotirlinga sites that take the name of the presiding deity; each is considered a different manifestation of Shiva.
+                 At all these sites, the primary image is a lingam representing the beginningless and endless Stambha pillar, symbolising the infinite nature of Shiva.</p>
+            <p class="info">The twelve jyothirlinga are located at Somnath in Gujarat, Mallikarjuna at Srisailam in Andhra Pradesh, Mahakaleswar at Ujjain in Madhya Pradesh, 
+                Omkareshwar in Madhya Pradesh, Kedarnath in Uttarakhand, Bhimashankar in Maharashtra, Viswanath at Varanasi in Uttar Pradesh, Triambakeshwar in Maharashtra, 
+                Baidyanath Jyotirlinga at Deoghar in Jharkhand, Nageswar at Dwarka in Gujarat, Rameshwar at Rameswaram in Tamil Nadu, and Grishneshwar at Aurangabad in Maharashtra</p>
+
+
+            <h3 class="mod"> History  </h3>
+            <h3 class="history">Ancient and classical periods</h3>
+            <p class="info">The Skanda Purana contains a part titled "Kashi Khanda",
+                while the Brahmavaivarta Purana includes a portion known as "Kashi Rahasya", both of which are dedicated to the city of Varanasi.</p>
+                
+                <p class="info">As per the Kashi Khanda, there were a total of 1099 temples, out of which 513 were specifically devoted to the worship of Shiva.
+                 The scripture states that the Vishvanath temple was formerly known as Moksha Lakshmi Vilas. The temple housed a total of five mandapas (halls). 
+                 The lingam of Vishwanath was situated in the garbhagriha (innermost sanctuary). 
+                The remaining four mandapas include the Jnana mandapa located to the east, the Ranga mandapa to the west, the Aishvarya mandapa to the north, and the Mukti mandapa to the south.
+            </p>
+            <p class="sum"> In summary, The Kashi Vishwanath Temple is renowned for its stunning golden spire and intricately carved walls,
+                 which reflect the rich artistry and spiritual heritage of Hindu culture. As you enter the temple, you’ll be enveloped in an atmosphere of tranquility and reverence,\
+                 enhanced by the melodious chants and the scent of incense that fills the air.</p>
+    </div>
+
+    <!-- JavaScript code to make it interactive -->
+    <script>
+        const images = document.querySelectorAll('.image');
+        const infoContainer = document.querySelector('.info-container');
+
+        images.forEach((image) => {
+            image.addEventListener('click', () => {
+                infoContainer.style.display = 'block';
+            });
+        });
+
+        infoContainer.addEventListener('click', () => {
+            infoContainer.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

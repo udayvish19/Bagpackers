@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bagpacker's - travel to feel</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        /* Add some basic styling to make it look nice */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .image {
+            margin-top: 50px;
+            width: 30%;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .image:hover {
+            transform: scale(1.1);
+        }
+        .h3{
+            font-size: 36;
+        }
+        .mod{
+            font-weight: lighter;
+            font-size: 40;
+        
+        }
+        .sum{
+            font-size: 20px;
+            font-weight: 300;
+        }
+        .info-container {
+            padding: 20px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .info {
+            font-family: Montserrat;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        .location {
+            font-family: Montserrat;
+            font-size: 48px;
+            margin-bottom: 10pxpx;
+        }
+        .history {
+            font-family: Montserrat;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        /* Make it responsive */
+        @media only screen and (max-width: 600px) {
+            .image {
+                width: 45%;
+            }
+        }
+        @media only screen and (max-width: 400px) {
+            .image {
+                width: 90%;
+            }
+        }
+                    /* Style the dropdown menus */
+    .w3-dropdown-hover:hover .w3-dropdown-content {
+        display:block ;
+         }
+    .w3-dropdown-content {
+      display: none;
+      position: absolute;
+      background-color:rgba(244, 155, 77, 0.696);
+      min-width: 160px;
+      z-index: 1;
+    }
+    .w3-dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .w3-dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    
+      
+    
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i></a>
+            <div class="header-content">
+            <h1 class="header-title">BAGPACKER's</h1>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about us.html">About</a></li>
+                    
+    
+                 <li>   <div class="w3-dropdown-hover">
+      <a href="#" class="w3-navbar-item  w3-padding-16">
+        Destination
+        <i class="fa fa-caret-down"></i>
+      </a>
+      <div class="w3-dropdown-content">
+        <a href="red_fort.html">Red Fort</a>
+        <a href="kashi.html">Kashiviswanath Temple</a>
+        <a href="Qutub_minar.html">Qutub Minar</a>
+        <a href="Dal_lake.html">Dal Lake</a>
+        <a href="taj_mahal.html">Taj Mahal</a>
+        <a href="ladakh.html">Ladakh</a>
+        <a href="clock_tower.html">Clock Tower</a>
+        <a href="Balsamand.html">Balsamand Lake</a>
+        <a href="india_gate.html">India Gate</a>
+        <a href="jhod_fort.html">Mehrangarh Fort</a>
+      </div>
+    </div></li>
+                    
+                    
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="Form.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Image container -->
+    <div class="image-container">
+        <img src="https://imgs.search.brave.com/Y896-n7H0_F7F3m_IEoIBr_EyJj4WJWg7uVSnZWE-FA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTg0/NzYzODI5L3Bob3Rv/L2RhbC1sYWtlLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1T/QnpVUE5jVmY4QTZ5/RnQ2aDJuOUdNUUJl/UWczdmxISzNONFdU/MXFwMGs4PQ" alt="dal" class="image">
+        <img src="https://imgs.search.brave.com/y9kMLV1roj9A2YZLHVSn46MG14EuEbZGfwwk3NeB1bw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YmVhdXRpZnVsd29y/bGQuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDE3LzA3L2xh/a2UtZGFsLXNoaWth/dmEtYm9hdC5qcGc" alt="dal" class="image">
+        <img src="https://imgs.search.brave.com/0p-nTSJLY4fmU-ditcDvAY-nzSwW5ByPQhEfHN20PpU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTQw/ODExMzQ2L3Bob3Rv/L3JlZmxlY3Rpb25z/LW9uLWRhbC1sYWtl/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1Ka3ZwQVlKaVBI/V1Q3dmNyNVlvWlQ5/ejRDRXBJN2lWd3dF/QldoMmlMeFlvPQ" alt="Dal" class="image">
+        <!-- Add more images here -->
+    </div>
+
+    <!-- Info container -->
+    <div class="info-container">
+        <h1 class="location">Dal Lake</h1>
+        <p class="info">Dal is a freshwater lake in Srinagar, the summer capital of the Indian-administered Jammu and Kashmir in the disputed Kashmir region.
+             It is an urban lake, the second largest lake in Jammu and Kashmir, and the most visited place in Srinagar by tourists and locals.
+              It is integral to tourism and recreation in the Kashmir valley and is variously known as the "Lake of Flowers","Jewel in the crown of Kashmir" or "Srinagar's Jewel".
+             The lake is also an important source for commercial operations in fishing and water plant harvesting.</p>
+        <p class="info">The shore line of the lake, about 15.5 kilometres (9.6 mi), is encompassed by a boulevard lined with Mughal era gardens, parks,
+             houseboats and hotels. Scenic views of the lake can be witnessed from the shore line Mughal gardens, such as Shalimar Bagh and Nishat Bagh 
+             built during the reign of Mughal Emperor Jahangir, and from houseboats cruising along the lake in the colourful shikaras. 
+            During the winter season, the temperature can sometimes reach as low as −11 °C (12 °F), freezing the lake.</p>
+        <p class="info">The lake covers an area of 18 square kilometres (6.9 sq mi) and is part of a natural wetland which covers 21.1 square kilometres (8.1 sq mi), including its floating gardens.
+             The floating gardens, known as "Rad" in Kashmiri, blossom with lotus flowers during July and August.
+              The wetland is divided by causeways into four basins;
+              Gagribal, Lokut Dal, Bod Dal and Nigeen (although Nigeen is also considered as an independent lake).
+             Lokut Dal and Bod Dal each have an island in the centre, known as Rupa Lank (or Char Chinari) and Sona Lank respectively.</p>
+        <p class="info">At present, the Dal and the Mughal gardens on its periphery are undergoing intensive restoration measures to fully address the serious eutrophication problems experienced by the lake.
+             Massive investments of approximately US$275 million (₹ 11 billion) are being made by the Government of India to restore the lake to its original splendour.</p>
+
+
+
+
+            <h3 class="mod"> History  </h3>
+            
+            <p class="info"> Dal is mentioned as Mahasarit (Sanskrit: महासरित्) in ancient Sanskrit texts. Ancient history records mention that a village named Isabar to the east of Dal was the residence of goddess Durga.
+                 This place was known as Sureshwari on the bank of the lake, which was sourced by a spring called the Satadhara. 
+                The name "Sureshwari" refers to the goddess Parvati, suggesting that the lake was once considered sacred and possibly associated with the goddess.</p>
+            
+            
+            
+            <h3 class="mod">Uses and attractions </h3>
+            <p class="info"> The lake is popular as a visitor attraction and a summer resort. Fisheries and the harvesting of food and fodder plants are also important on Dal.
+                 Weeds from the lake are extracted and converted into compost for the gardens. It also serves as a flood lung of the Jhelum River.
+                 Swimming, boating, snow skiing (particularly when the lake is frozen during the severe winter),
+                  and canoeing are amongst some of the water sports activities practised on the lake.</p>
+            <p class="info"> The lake has numerous sites and places of interest, many of which are important to the cultural heritage of Srinagar.
+                 Aside from the Shalimar Bagh and Nishat Bagh, some of the other places frequented by tourists are the Shankaracharya temple,
+                 the Hari Parbat, the Nigeen Lake, the Chashme Shahi, the Hazratbal Shrine, and the Mazar-e-Shura cemetery containing the graves of famous Mughal-era poets.
+                 Visitors and native alike also enjoy relaxing on the water in a houseboat or a shikara boat, often called "the Gondola of Kashmir".
+            </p>
+
+            <h3 class="mod"> Houseboats and shikaras</h3>
+            
+            <p class="info">
+                Houseboats and the Dal are widely associated with Srinagar and are nicknamed "floating palaces", built according to British customs.
+                 The houseboats are generally made from local cedar-wood and measure 24–38 metres (79–125 ft) in length and 3–6 metres (9.8–19.7 ft) in width and are graded in a similar fashion to hotels according to level of comfort.
+                  Many of them have lavishly furnished rooms, with verandas and a terrace to serve as a sun-deck or to serve evening cocktails.
+                   They are mainly moored along the western periphery of the lake, 
+                  close to the lakeside boulevard in the vicinity of the Dal gate and on small islands in the lake.
+                   They are anchored individually, with interconnecting bridges providing access from one boat to the other.
+                 The kitchen-boat is annexed to the main houseboat, which also serves as residence of the boatkeeper and their family.</p>
+             <p class="info"> Each houseboat has an exclusive shikara for ferrying guests to the shore.
+                 A shikara is a small paddled taxi boat, often about 15 feet (4.6 m) long and made of wood with a canopy and a spade shaped bottom. 
+                 It is a cultural symbol of the Kashmir valley, used not only for ferrying visitors but also for the vending of fruits, vegetables and flowers; for fishing and for harvesting aquatic vegetation.\
+                  All gardens in the lake periphery and houseboats anchored in the lake are approachable through shikaras.
+                   The boats are often navigated by one or two boatmen, can seat about six people and have heavily cushioned seats and backrests to provide comfort.
+                 The shikara is also used to provide for other sightseeing options in the valley, notably a cruise along the Jhelum River, passing by the famous seven bridges of the city and the backwaters en route
+            </p>
+
+
+
+            <h3 class="mod"> Transport connections </h3>
+            <p class="info">
+                Dal lake is engulfed in three directions by the foreshore and boulevard roads, which stretch along its banks and are dotted with several ghats.
+                 Shikaras act as water taxis to navigate within the Dal and can be hired from these ghats.
+                  The Dal lies within Srinagar and thus is well connected by road and air links.
+                   The nearest airport, which connects with other major cities in the country, is about 12.8 kilometres (8.0 mi) away at Badgam.
+                    The nearest railway station is Srinagar railway station which is 18.8 kilometres (11.7 mi) from Dal Lake.
+                 The National Highway NH1A connects the Kashmir valley with rest of the country.</p>
+            
+            <h3 class="mod">Legacy  </h3>
+            
+            <p class="info">
+                Salman Rushdie's Dull lake in his novel Harun and the Sea of Stories is a reference to the Dal lake.<br><br>
+
+                The scene depicting sexual intimacy between Musa and his girlfriend Tilo in Arundhati Roy's The Ministry of Utmost Happiness, takes place on a houseboat on the Dal lake.
+                <br><br>
+                "Dupte Nunem," one of the famous songs of Aadil Gurezi, refers to the breeze of Dal lake</p>
+            
+            <br>
+            <p class="sum"> In summary,Dal Lake, often called the "Jewel of Srinagar," is a stunning, serene lake surrounded by the majestic Himalayas.
+                 Known for its iconic houseboats, traditional Shikara rides, and vibrant floating gardens, it offers an enchanting escape into natural beauty and Kashmiri culture.
+                 Visitors can enjoy leisurely boat rides, explore lush gardens, and experience the local hospitality, making Dal Lake a must-visit destination for a tranquil and memorable getaway.</p>
+    </div>
+
+    <!-- JavaScript code to make it interactive -->
+    <script>
+        const images = document.querySelectorAll('.image');
+        const infoContainer = document.querySelector('.info-container');
+
+        images.forEach((image) => {
+            image.addEventListener('click', () => {
+                infoContainer.style.display = 'block';
+            });
+        });
+
+        infoContainer.addEventListener('click', () => {
+            infoContainer.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

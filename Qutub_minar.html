@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bagpacker's - travel to feel</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        /* Add some basic styling to make it look nice */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .image {
+            margin-top: 50px;
+            width: 30%;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .image:hover {
+            transform: scale(1.1);
+        }
+        .h3{
+            font-size: 36;
+        }
+        .mod{
+            font-weight: lighter;
+            font-size: 40;
+        
+        }
+        .sum{
+            font-size: 20px;
+            font-weight: 300;
+        }
+        .info-container {
+            padding: 20px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .info {
+            font-family: Montserrat;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        .location {
+            font-family: Montserrat;
+            font-size: 48px;
+            margin-bottom: 10pxpx;
+        }
+        .history {
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        /* Make it responsive */
+        @media only screen and (max-width: 600px) {
+            .image {
+                width: 45%;
+            }
+        }
+        @media only screen and (max-width: 400px) {
+            .image {
+                width: 90%;
+            }
+        }
+                    /* Style the dropdown menus */
+    .w3-dropdown-hover:hover .w3-dropdown-content {
+        display:block ;
+         }
+    .w3-dropdown-content {
+      display: none;
+      position: absolute;
+      background-color:rgba(244, 155, 77, 0.696);
+      min-width: 160px;
+      z-index: 1;
+    }
+    .w3-dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .w3-dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    
+      
+    
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i></a>
+            <div class="header-content">
+            <h1 class="header-title">BAGPACKER's</h1>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about us.html">About</a></li>
+                    
+    
+                 <li>   <div class="w3-dropdown-hover">
+      <a href="#" class="w3-navbar-item  w3-padding-16">
+        Destination
+        <i class="fa fa-caret-down"></i>
+      </a>
+      <div class="w3-dropdown-content">
+        <a href="red_fort.html">Red Fort</a>
+        <a href="kashi.html">Kashiviswanath Temple</a>
+        <a href="Qutub_minar.html">Qutub Minar</a>
+        <a href="Dal_lake.html">Dal Lake</a>
+        <a href="taj_mahal.html">Taj Mahal</a>
+        <a href="ladakh.html">Ladakh</a>
+        <a href="clock_tower.html">Clock Tower</a>
+        <a href="Balsamand.html">Balsamand Lake</a>
+        <a href="india_gate.html">India Gate</a>
+        <a href="jhod_fort.html">Mehrangarh Fort</a>
+      </div>
+    </div></li>
+                    
+                    
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="Form.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Image container -->
+    <div class="image-container">
+        <img src="https://imgs.search.brave.com/B33nxLNfS_rHtIiCvu79d5NlD0nCBg8Fmm2IAlE2sMw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNDgw/NjY0MzM3L3Bob3Rv/L3F1dHViLW1pbmFy/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz12ODN3Y0ZfdXFl/cFZ0RXlCUGlOdzU1/U3Y5LVpiOHEtM0M5/djNWQ1Rra3d3PQ" alt="Qutub minar" class="image">
+        <img src="https://imgs.search.brave.com/-EJNy3sE9uNZsPF25VhHjtzK0QE-NkorosMD7ffS-bo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvODMx/MzgyODU4L3Bob3Rv/L3F1dHViLW1pbmFy/LW1pbmFyZXQtaW4t/ZGVsaGkuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPU90VFV5/eWNMeDdIVVJTdENY/RUdoX0hKcmVCeDBy/RkxvX25LZG00SThT/SlE9" alt="qutub minar" class="image">
+        <img src="https://imgs.search.brave.com/7MPtsYsq1OsxRNvWWtni7RnPtuADEkRFuFSLXqB97WI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzc5LzkyLzgw/LzM2MF9GXzM3OTky/ODA3Ml9Pd3BCdTJC/WWltT2VOTVZhc1ZC/RDAwSnhYS2RSSEFq/Vi5qcGc" alt="qutub minar" class="image">
+        <!-- Add more images here -->
+    </div>
+
+    <!-- Info container -->
+    <div class="info-container">
+        <h1 class="location">Qutub Minar</h1>
+        <p class="info">The Qutub Minar is a minaret and “victory tower” located in the Qutb complex, 
+            situated at the site of Delhi’s oldest fortified city, Lal Kot, founded by the Tomar Rajputs.
+            It was started in 1199 by Qutb ud-Din Aibak and completed around 1220 by his son-in-law Iltutmish. The Qutub Minar is a stunning example of Indo-Islamic architecture and a UNESCO World Heritage Site located in Delhi, India. Built between 1193 and 1220 by Qutb-ud-din Aibak and his successor, Iltutmish, it was intended as a victory tower and a minaret for the adjacent mosque, the Quwwat-ul-Islam Mosque.</p>
+        <h3 class="history"> History  </h3>
+        <p class="info">The Qutb Minar was built over the ruins of the Lal Kot, the citadel of Dhillika.
+            Qutub Minar was begun after the Quwwat-ul-Islam Mosque. Drawing references from their Ghurid homeland,
+            Qutub-ud-Din Aibak and Shamsu’d-Din Iltutmish constructed a minar (minaret) at the south-eastern corner of the Quwwatu’l-Islam between 1199 and 1503.It is usually thought that the tower is named for Qutb-ud-din Aibak, who began it. 
+            It is also possible that it is named after Khwaja Qutbuddin Bakhtiar Kaki a 13th-century sufi saint, because Shamsuddin Iltutmish was a devotee of his.<br>
+            It was added to the list of World Heritage Site by UNESCO in 1993.</p>
+
+            
+            <h3 class="history">Patrons and architects</h3>
+            <p class="info">Qutb-ud-din Aibak, a deputy of Muhammad of Ghor, who founded the Delhi Sultanate after Muhammad of Ghor's death, started construction of the Qutb Minar's first story in 1199. Aibak's successor and son-in-law Shamsuddin Iltutmish completed a further three stories.
+                 After a lightning strike in 1369 damaged the then top story, the ruler at the time, Firuz Shah Tughlaq, replaced the damaged story and added one more.
+                 Sher Shah Suri also added an entrance while he was ruling and the Mughal emperor Humayun was in exile.</p>
+            
+            
+            <h3 class="history">Architecture </h3>
+            <p class="info">Persian-Arabic and Nagari in different sections of the Qutb Minar reveal the history of its construction and the later restorations and repairs by Firuz Shah Tughlaq (1351–88) and Sikandar Lodi (1489–1517).
+                The height of Qutb Minar is 72.5 meters, making it the tallest minaret in the world built of bricks. The tower tapers, and has a 14.3 metres (47 feet) base diameter, reducing to 2.7 metres (9 feet) at the top of the peak.
+                It contains a spiral staircase of 379 steps. At the foot of the tower is the Quwat Ul Islam Mosque. The Minar tilts just over 65 cm from the vertical, which is considered to be within safe limits.
+                Qutb Minar was an inspiration and prototype for many minarets and towers built. The Chand Minar and Mini Qutub Minar bear resemblance to the Qutb Minar and inspired from it.</p>
+            
+            
+        
+            <h3 class="history"> Controversy </h3>
+            
+            <p class="info">On 14 November 2000, Delhi newspapers reported that the Hindu nationalist groups, Vishva Hindu Parishad and Bajrang Dal, planned to host a yajna, a ritualistic Hindu ceremony related to cleansing or purification, at the Qutub Minar complex where the minaret is located. The Delhi police detained 80 activists led by Ram Krishan Gaur that were located by the Qutb Minar and were stopped from performing the yajna inside the tower.
+                 Due to a police barricade, the activists instead performed the ritual on the streets outside the mosque complex. Since the spolia of Jain and Hindu temples were used to construct the minaret, the right-wing Hindu groups believed that they needed to perform a cleansing at the complex in order to free the Hindu icons that were "trapped" in the minaret and the mosque complex.
+                On 18 May 2022, a former Regional Director of Archaeological Survey of India, Dharamveer Sharma, has claimed that Qutb Minar was built by Raja Vikramaditya in the fifth century to observe the changing position of the sun.
+                On 21 May 2022, The Secretary at the Ministry of Culture, Govind Mohan, decided to conduct excavation and iconography of idols found at Qutub Minar. The Ministry has now asked the ASI to submit an excavation report. Excavation can be started in the south of the minaret at a distance of 15 meters from the mosque
+            </p>
+            
+            <h3 class="history"> In popular culture</h3>
+            <p class="info">
+                Bollywood actor and director Dev Anand wanted to shoot the song "Dil Ka Bhanwar Kare Pukar" from his film Tere Ghar Ke Samne inside the Minar. However, the cameras in that era were too big to fit inside the tower's narrow passage, and therefore the song was shot inside a replica of the Qutb Minar.
+                The site served as the Pit Stop of the second leg of the second series of The Amazing Race Australia.
+                A picture of the minaret is featured on the travel cards and tokens issued by the Delhi Metro Rail Corporation. A recently launched start-up in collaboration with the Archaeological Survey of India has made a 360o walkthrough of Qutb Minar available.
+                Ministry of Tourism recently gave seven companies the 'Letters of Intent' for fourteen monuments under its 'Adopt a Heritage Scheme.' These companies will be the future 'Monument Mitras.' Qutb Minar has been chosen to part of that list.
+            </p>
+            
+            <p class="sum"> In summary, Discover the grandeur of Delhi's Qutub Minar, a breathtaking monument that stands as a testament to India's rich history and architectural brilliance. Rising majestically to 73 meters, this towering minaret, built in the 12th century, is the tallest brick structure in the world. Adorned with intricate carvings and Quranic inscriptions,
+                 the Qutub Minar offers a glimpse into the artistic prowess of the era. As you explore the Qutub Minar, you'll be captivated by its elegant tapering design and the stunning views from its balconies. The surrounding complex, including the historic Quwwat-ul-Islam Mosque and the enigmatic Iron Pillar of Delhi,
+                 enriches the experience with their historical significance and unique architectural features.Whether you're a history enthusiast, architecture aficionado, or simply seeking to immerse yourself in India's vibrant heritage, the Qutub Minar promises an unforgettable journey through time. Don't miss the chance to marvel at this UNESCO World Heritage Site and witness the legacy of a bygone era.</p>
+    </div>
+
+    <!-- JavaScript code to make it interactive -->
+    <script>
+        const images = document.querySelectorAll('.image');
+        const infoContainer = document.querySelector('.info-container');
+
+        images.forEach((image) => {
+            image.addEventListener('click', () => {
+                infoContainer.style.display = 'block';
+            });
+        });
+
+        infoContainer.addEventListener('click', () => {
+            infoContainer.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
